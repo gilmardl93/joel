@@ -11,6 +11,10 @@
 |
 */
 
+require __DIR__.'/admin/admin.route.php';
+require __DIR__.'/users/users.route.php';
+require __DIR__.'/pagina/pagina.route.php';
+
 Route::get('/', function () {
     return view('welcome');
 });

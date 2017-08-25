@@ -17,8 +17,11 @@ class CreateMarcasTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('imagen');
+            $table->integer('idusuario')->unsigned();
             $table->softDeletes();
             $table->timestamps();
+
+            $table->foreign('idusuario')->references('id')->on('users');
         });
     }
 

@@ -1,0 +1,1 @@
+        {!! Html::script('assets/pages/scripts/dashboard.min.js') !!}

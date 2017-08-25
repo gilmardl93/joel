@@ -16,8 +16,11 @@ class CreateCategoriasTable extends Migration
         Schema::create('categoria', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
+            $table->integer('idusuario')->unsigned();
             $table->softDeletes();
             $table->timestamps();
+
+            $table->foreign('idusuario')->references('id')->on('users');
         });
     }
 

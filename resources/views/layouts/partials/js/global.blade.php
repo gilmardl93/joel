@@ -1,0 +1,1 @@
+        {!! Html::script('assets/global/scripts/app.min.js') !!}
